@@ -1,0 +1,94 @@
+
+/*-------------------- BASE --------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1rem;
+}
+
+/*-------------------- MAIN SECTION --------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+  padding: 2rem 1rem; 
+}
+
+.correct-img {
+  width: 20%;
+  max-width: 5rem;
+  height: auto;
+}
+
+h1 {
+  color: #0A3641;
+  font-size: clamp(1.8rem, 5vw, 2.5rem); 
+  margin: 1rem 0;
+}
+
+.thanks {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  margin-bottom: 0.5rem;
+}
+
+/*-------------------- BOXES --------------------*/
+
+/* Outer beige box */
+.beige-box {
+  background-color: #eee6df;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 31.25rem; 
+  display: flex;
+  justify-content: center;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Inner white box */
+.white-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  width: 85%;
+  text-align: left;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Rows inside white box */
+.white-box .row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  margin: 0.25rem 0;
+  gap: 0.5rem;
+  flex-wrap: wrap; 
+}
+
+/*-------------------- BUTTON --------------------*/
+.done-button {
+  display: block;
+  background-color: #5CABC3;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 1rem;
+  font-size: clamp(1.2rem, 4vw, 2rem); 
+  text-decoration: none;
+  margin-top: 1.25rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.done-button:hover {
+  background-color: #4b91a9;
+}
