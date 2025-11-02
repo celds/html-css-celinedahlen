@@ -81,16 +81,114 @@ body {
 }
 
 
+/*---------------PRODUCT DETAIL SECTION---------------*/
 
+.product-detail {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 1rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
 
+.product-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #ECE5DE;
+  padding: clamp(2rem, 5vw, 6rem);
+  border-radius: 1rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: min(90%, 1000px);
+}
 
+.product-image {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.product-image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
 
+.product-info {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.product-info h1 {
+  color: #000000;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+}
 
+.product-info .price {
+  color: #000000;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
+.product-info .description {
+  color: #000000;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
 
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
 
+.sizes button {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: clamp(36px, 6vw, 44px);
+  height: clamp(36px, 6vw, 44px);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 600;
+  cursor: pointer;
+ 
+}
+
+.sizes button:hover {
+  background-color: #5CABC3;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.add-to-bag {
+  background-color: #5CABC3;
+  color: #ffffff;
+  border: none;
+  padding: clamp(0.8rem, 2.5vw, 1rem) clamp(3rem, 6vw, 4rem);
+  border-radius: 15px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  cursor: pointer;
+  align-self: flex-start;
+  
+}
+
+.add-to-bag:hover {
+  background-color: #478a9e;
+  transform: scale(1.03);
+}
 
 
 /*-------------------- FOOTER --------------------*/
