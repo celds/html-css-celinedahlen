@@ -81,7 +81,7 @@ body {
 }
 
 
-/*---------------PRODUCTS 1---------------*/
+/* PRODUCTS 1 */
 .main {
   position: relative;
   width: 100%;
@@ -140,7 +140,7 @@ body {
 }
 
 
-/*---------------PRODUCTS 2---------------*/
+/* PRODUCTS 2 */
 
 .h1, h2 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);

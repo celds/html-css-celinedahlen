@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 
-/*-------------------- BASE --------------------*/
+/* BASE */
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
 }
 
-/*-------------------- HEADER --------------------*/
+/* HEADER */
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
@@ -81,7 +81,7 @@ body {
 }
 
 
-/*---------------PRODUCT DETAIL SECTION---------------*/
+/* PRODUCT DETAIL SECTION */
 
 .product-detail {
   display: flex;
@@ -191,7 +191,7 @@ body {
 }
 
 
-/*-------------------- FOOTER --------------------*/
+/* FOOTER */
 footer {
   width: 100%;
   background: #5CABC3;
