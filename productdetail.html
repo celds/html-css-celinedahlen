@@ -1,110 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
- <head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name ="description" content = "page showing red and black jacket and its details" />
+    <meta
+      name="description"
+      content="page showing red and black jacket and its details"
+    />
     <title>Rainydays product detail page</title>
-    <link rel="stylesheet" href="src/css/productdetails.css" />
-    </head>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
   <body class="productdetail-page">
+    <!--HEADER-->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html">
+          <img
+            src="./assets/images/RainyDays_Logo.png"
+            alt="RainyDays logo"
+            class="logo"
+          />
+        </a>
 
+        <nav class="nav-links">
+          <ul>
+            <li><a href="products.html">Women</a></li>
+            <li><a href="products.html">Men</a></li>
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </nav>
 
-<!--HEADER-->
-<header class="header">
-  <div class="header-container">
-     <a href="index.html">
-    <img src="./assets/images/RainyDays_Logo.png" alt="RainyDays logo" class="logo">
-     </a>
+        <div class="icons">
+          <button><img src="./assets/images/search.png" alt="Search" /></button>
+          <button><img src="./assets/images/user.png" alt="Profile" /></button>
+          <button>
+            <img src="./assets/images/parcel.png" alt="Shopping bag" />
+          </button>
+        </div>
+      </div>
+    </header>
 
-    
-    <nav class="nav-links">
-      <ul>
-        <li><a href="products.html">Women</a></li>
-        <li><a href="products.html">Men</a></li>
-        <li><a href="#">Equipment</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
-    </nav>
+    <div class="blue-stripe1"></div>
 
-  
-    <div class="icons">
-      <button><img src="./assets/images/search.png" alt="Search"></button>
-      <button><img src="./assets/images/user.png" alt="Profile"></button>
-      <button><img src="./assets/images/parcel.png" alt="Shopping bag"></button>
-    </div>
-  </div>
-</header>
+    <!--MAIN SECTION-->
 
-<div class="blue-stripe1"></div>
+    <main class="pd-product-detail">
+      <div class="pd-product-box">
+        <div class="pd-product-image">
+          <img
+            src="./assets/images/RainyDays_Jacket3.jpg"
+            alt="Ultra light weather resistant jacket"
+          />
+        </div>
 
+        <div class="pd-product-info">
+          <h1>
+            Ultra light weather <br />
+            resistant jacket
+          </h1>
+          <p class="pd-price">799 NOK</p>
+          <p class="pd-description">
+            A light jacket with excellent <br />
+            durability, fit for different types <br />
+            of weather and outdoor activities.
+          </p>
 
-<!--MAIN SECTION-->
+          <div class="pd-sizes">
+            <button>XS</button>
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+          </div>
 
-<main class="product-detail">
-  <div class="product-box">
-    <div class="product-image">
-      <img src="./assets/images/RainyDays_Jacket3.jpg" alt="Ultra light weather resistant jacket" />
-    </div>
+          <a href="cart.html">
+            <button class="pd-add-to-bag">Add to bag</button>
+          </a>
+        </div>
+      </div>
+    </main>
 
-    <div class="product-info">
-      <h1>Ultra light weather <br> resistant jacket</h1>
-      <p class="price">799 NOK</p>
-      <p class="description">
-        A light jacket with excellent <br> durability, fit for different types <br> of weather and outdoor activities.
-      </p>
+    <!--FOOTER--->
 
-      <div class="sizes">
-        <button>XS</button>
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
-        <button>XL</button>
+    <footer>
+      <div class="footer-logo">
+        <img src="./assets/images/RainyDays_Logo.png" alt="Rainydays logo" />
       </div>
 
-      <a href="cart.html">
-      <button class="add-to-bag">Add to bag</button>
-      </a>
-    </div>
-  </div>
-</main> 
+      <div class="need-help">
+        <h3>Need help?</h3>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Size guide</a></li>
+          <li><a href="#">Order status</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
 
-<!--FOOTER--->
+      <div class="about-us">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">Rainy days</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Find a store</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
 
-<footer>
-  <div class="footer-logo">
-    <img src="./assets/images/RainyDays_Logo.png" alt="Rainydays logo" />
-  </div>
-
-  <div class="need-help">
-    <h3>Need help?</h3>
-    <ul>
-      <li><a href="#">Help center</a></li>
-      <li><a href="#">Size guide</a></li>
-      <li><a href="#">Order status</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </div>
-
-  <div class="about-us">
-    <h4>About us</h4>
-    <ul>
-      <li><a href="#">Rainy days</a></li>
-      <li><a href="#">Terms of use</a></li>
-      <li><a href="#">Find a store</a></li>
-      <li><a href="#">Careers</a></li>
-    </ul>
-  </div>
-
-  <div class="other-platforms">
-    <h5>Other platforms</h5>
-    <ul>
-      <li><button><img src="./assets/images/icons8-instagram-48.png" alt="instagram logo"></button></li>
-      <li><button><img src="./assets/images/icons8-facebook-48.png" alt="facebook logo"></button></li>
-      <li><button><img src="./assets/images/icons8-twitter-48.png" alt="twitter logo"></button></li>
-      <li><button><img src="./assets/images/icons8-youtube-48.png" alt="youtube logo"></button></li>
-    </ul>
-  </div>
-</footer>
-</body>
+      <div class="other-platforms">
+        <h5>Other platforms</h5>
+        <ul>
+          <li>
+            <button>
+              <img
+                src="./assets/images/icons8-instagram-48.png"
+                alt="instagram logo"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="./assets/images/icons8-facebook-48.png"
+                alt="facebook logo"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="./assets/images/icons8-twitter-48.png"
+                alt="twitter logo"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="./assets/images/icons8-youtube-48.png"
+                alt="youtube logo"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
