@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,8 @@
   <body>
     <main>
       <div class="confirmation-header">
+        <div id="loader" class="loader hidden"></div>
+        <div id="error-message" class="error-message hidden"></div>
         <img
           src="assets/images/correct.png"
           alt="Green checkmark"
@@ -25,7 +27,7 @@
         <div class="white-box">
           <div class="row">
             <p>Amount:</p>
-            <p>799 NOK</p>
+            <p id="confirmed-amount"></p>
           </div>
           <div class="row">
             <p>Date:</p>
@@ -42,5 +44,6 @@
         </div>
       </div>
     </main>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

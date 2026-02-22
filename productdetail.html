@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,9 +33,13 @@
         <div class="icons">
           <button><img src="./assets/images/search.png" alt="Search" /></button>
           <button><img src="./assets/images/user.png" alt="Profile" /></button>
-          <button>
-            <img src="./assets/images/parcel.png" alt="Shopping bag" />
-          </button>
+          <a href="cart.html"
+            ><button>
+              <img
+                src="./assets/images/parcel.png"
+                alt="Shopping bag"
+              /></button
+          ></a>
         </div>
       </div>
     </header>
@@ -45,38 +49,10 @@
     <!--MAIN SECTION-->
 
     <main class="pd-product-detail">
+      <div id="loader" class="loader hidden"></div>
+      <div id="error-message" class="error-message hidden"></div>
       <div class="pd-product-box">
-        <div class="pd-product-image">
-          <img
-            src="./assets/images/RainyDays_Jacket3.jpg"
-            alt="Ultra light weather resistant jacket"
-          />
-        </div>
-
-        <div class="pd-product-info">
-          <h1>
-            Ultra light weather <br />
-            resistant jacket
-          </h1>
-          <p class="pd-price">799 NOK</p>
-          <p class="pd-description">
-            A light jacket with excellent <br />
-            durability, fit for different types <br />
-            of weather and outdoor activities.
-          </p>
-
-          <div class="pd-sizes">
-            <button>XS</button>
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-            <button>XL</button>
-          </div>
-
-          <a href="cart.html">
-            <button class="pd-add-to-bag">Add to bag</button>
-          </a>
-        </div>
+        <div class="pd-sizes"></div>
       </div>
     </main>
 
@@ -98,7 +74,7 @@
       </div>
 
       <div class="about-us">
-        <h4>About us</h4>
+        <h3>About us</h3>
         <ul>
           <li><a href="#">Rainy days</a></li>
           <li><a href="#">Terms of use</a></li>
@@ -108,7 +84,7 @@
       </div>
 
       <div class="other-platforms">
-        <h5>Other platforms</h5>
+        <h3>Other platforms</h3>
         <ul>
           <li>
             <button>
@@ -145,5 +121,6 @@
         </ul>
       </div>
     </footer>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

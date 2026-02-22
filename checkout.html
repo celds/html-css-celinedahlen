@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body>
-    <!--logo-->
-    <header class="site-header">
+
+
+    <header class="check-site-header">
       <a href="index.html">
         <img
           src="./assets/images/RainyDays_Logo.png"
           alt="RainyDays logo"
-          class="logo"
+          class="check-logo"
         />
       </a>
     </header>
 
     <main class="checkout-wrapper">
+      <div id="loader" class="loader hidden"></div>
+    <div id="error-message" class="error-message hidden"></div>
       <h1>Checkout</h1>
       <div class="checkout-container">
-        <div class="left-column">
-          <!--DELIVERY-->
+        <div class="check-left-column">
+       
           <section class="checkout-box delivery-box">
             <h2>1. Delivery</h2>
             <form>
-              <div class="input-row">
+              <div class="check-input-row">
                 <input type="text" placeholder="First name" required />
                 <input type="text" placeholder="Last name" required />
               </div>
@@ -55,65 +58,39 @@
             </form>
           </section>
 
-          <!---------------PAYMENT--------------->
-          <section class="checkout-box payment-box">
-            <h2>2. Payment</h2>
-            <form>
-              <label
-                ><input type="radio" name="payment" checked /> Pay with
-                card</label
-              >
-              <input type="text" placeholder="Card number" />
-              <div class="input-row">
-                <input type="text" placeholder="Expiration date" />
-                <input type="text" placeholder="Security code" />
-              </div>
-              <hr />
-              <label
-                ><input type="radio" name="payment" /> Pay with Klarna</label
-              >
-              <hr />
-              <label
-                ><input type="radio" name="payment" /> Pay with Vipps</label
-              >
-              <hr />
-
-              <p><strong>Total</strong> <span>799 NOK</span></p>
-
-              <a href="payment.html" class="pay-btn">Pay order</a>
-            </form>
-          </section>
+         
+  <section class="checkout-box payment-box">
+  <h2>2. Payment</h2>
+  <form id="payment-form">
+    <label><input type="radio" name="payment" checked /> Pay with card</label>
+    <input type="text" id="cardNumber" placeholder="Card number" />
+    <div class="input-row">
+      <input type="text" id="expiration" placeholder="Expiration date" />
+      <input type="text" id="security" placeholder="Security code" />
+    </div>
+    <hr />
+    <label><input type="radio" name="payment" /> Pay with Klarna</label>
+    <hr />
+    <label><input type="radio" name="payment" /> Pay with Vipps</label>
+    <hr />
+    <button type="submit" class="pay-btn">Pay order</button>
+  </form>
+</section>
         </div>
 
-        <!---------------ORDER SUMMARY--------------->
         <section class="checkout-box order-summary-box">
           <h2>Order Summary</h2>
-          <div class="order-summary">
-            <p><strong>Sub Total</strong> <span>799 NOK</span></p>
-            <p><strong>Shipping</strong> <span>Free</span></p>
-            <p class="small-text">Estimated delivery 4–7 working days</p>
+          <div class="check-order-summary">
+            <p class="check-small-text">Estimated delivery 4–7 working days</p>
             <hr />
-            <p class="discount"><a href="#">Add Discount Code</a></p>
+            <p class="check-discount"><a href="#">Add Discount Code</a></p>
             <hr />
-            <p><strong>Total</strong> <span>799 NOK</span></p>
-            <p class="small-text">Including VAT, shipping and customs cost</p>
+            <p class="check-small-text">Including VAT, shipping and customs cost</p>
             <hr />
           </div>
-
-          <div class="product">
-            <img
-              src="assets/images/RainyDays_Jacket3.jpg"
-              alt="Ultra light weather resistant jacket"
-            />
-            <div>
-              <p class="product-title">Ultra light weather resistant jacket</p>
-              <p>Color: Red</p>
-              <p>Size: M</p>
-              <p>Quantity: 1</p>
-            </div>
           </div>
         </section>
-      </div>
     </main>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

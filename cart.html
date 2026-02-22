@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
       name="description"
       content="Cart page with one red and black jacket in the cart "
     />
-    <title>Rainydays cart</title>
+    <title>Rainy days cart</title>
     <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body class="cart">
@@ -33,85 +33,72 @@
         <div class="icons">
           <button><img src="./assets/images/search.png" alt="Search" /></button>
           <button><img src="./assets/images/user.png" alt="Profile" /></button>
-          <button>
-            <img src="./assets/images/parcel.png" alt="Shopping bag" />
-          </button>
+          <a href="cart.html"
+            ><button>
+              <img
+                src="./assets/images/parcel.png"
+                alt="Shopping bag"
+              /></button
+          ></a>
         </div>
       </div>
     </header>
 
-    <div class="blue-stripe1"></div>
+    <div class="blue-stripe-cart1"></div>
 
     <main class="cart-section">
+      <div id="loader" class="loader hidden"></div>
+      <div id="error-message" class="error-message hidden"></div>
       <div class="cart-container">
         <!-- LEFT SIDE -->
         <div class="cart-left">
-          <h1>Shopping Bag (1 Item)</h1>
+          <h1 class="cart-title">Shopping Bag</h1>
           <hr />
 
-          <div class="cart-item">
-            <img
-              src="./assets/images/RainyDays_Jacket3.jpg"
-              alt="Ultra light weather resistant jacket"
-            />
+          <div class="cart-items"></div>
+        </div>
+      </div>
 
-            <div class="cart-item-info">
-              <h2>Ultra light weather resistant jacket</h2>
-              <p>Color: Red</p>
-              <p>Size: M</p>
+      <!-- RIGHT SIDE -->
+      <aside class="cart-order-summary">
+        <h2>Order Summary</h2>
 
-              <hr />
-
-              <div class="cart-item-actions">
-                <a href="#">Remove</a>
-                <div class="quantity">
-                  <label for="qty"></label>
-                  <select id="qty">
-                    <option>1</option>
-                  </select>
-                </div>
-                <p class="cart-price">NOK 799</p>
-              </div>
-            </div>
-          </div>
+        <div class="cart-summary-item">
+          <p><strong>Subtotal</strong></p>
+          <p>
+            <strong><span class="cart-subtotal">0</span></strong>
+          </p>
         </div>
 
-        <!-- RIGHT SIDE -->
-        <aside class="cart-order-summary">
-          <h2>Order Summary</h2>
+        <div class="cart-summary-item">
+          <p><strong>Shipping</strong></p>
+          <p><strong>Free</strong></p>
+        </div>
 
-          <div class="cart-summary-item">
-            <p><strong>Subtotal</strong></p>
-            <p><strong>799 NOK</strong></p>
-          </div>
+        <p class="cart-shipping-info">Estimated delivery 4-7 working days</p>
 
-          <div class="cart-summary-item">
-            <p><strong>Shipping</strong></p>
-            <p><strong>Free</strong></p>
-          </div>
+        <hr />
 
-          <p class="cart-shipping-info">Estimated delivery 4-7 working days</p>
+        <div class="cart-discount">
+          <p>Add Discount Code</p>
+          <span>+</span>
+        </div>
 
-          <hr />
+        <hr />
 
-          <div class="cart-discount">
-            <p>Add Discount Code</p>
-            <span>+</span>
-          </div>
+        <div class="cart-summary-item total">
+          <p><strong>Total</strong></p>
+          <p>
+            <strong><span class="cart-total">0</span></strong>
+          </p>
+        </div>
 
-          <hr />
+        <p class="cart-tax-info">Including VAT, shipping and customs cost</p>
 
-          <div class="cart-summary-item total">
-            <p><strong>Total</strong></p>
-            <p><strong>799 NOK</strong></p>
-          </div>
-
-          <p class="cart-tax-info">Including VAT, shipping and customs cost</p>
-          <a href="checkout.html" class="cart-checkout-btn"
-            >Continue to checkout</a
-          >
-        </aside>
-      </div>
+        <a href="checkout.html" class="cart-checkout-btn"
+          >Continue to checkout</a
+        >
+      </aside>
     </main>
 
     <!--Footer section-->
@@ -131,7 +118,7 @@
       </div>
 
       <div class="about-us">
-        <h4>About us</h4>
+        <h3>About us</h3>
         <ul>
           <li><a href="#">Rainy days</a></li>
           <li><a href="#">Terms of use</a></li>
@@ -141,7 +128,7 @@
       </div>
 
       <div class="other-platforms">
-        <h5>Other platforms</h5>
+        <h3>Other platforms</h3>
         <ul>
           <li>
             <button>
@@ -179,4 +166,5 @@
       </div>
     </footer>
   </body>
+  <script src="src/js/script.js"></script>
 </html>
