@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p>${jacket.price} NOK</p>
             </div>
           `;
-          
+
           homeProductRow.appendChild(product);
         });
       }
