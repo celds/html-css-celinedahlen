@@ -79,10 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
               <p>${jacket.title}</p>
               <p>${jacket.price} NOK</p>
             </div>
-            <button class="add-to-cart-btn">Add to cart</button>
           `;
-          const button = product.querySelector(".add-to-cart-btn");
-          button.addEventListener("click", () => addToCart(jacket));
+          
           homeProductRow.appendChild(product);
         });
       }
