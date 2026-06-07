@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      // Home pag //
+      // Home page //
       if (homeProductRow) {
         homeProductRow.innerHTML = "";
         jackets.forEach((jacket) => {
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="cart-item-info">
           <h2>${item.title}</h2>
           <label>Quantity:</label>
-          <input type="number" min="1" value="${item.quantity}" data-index="${index}" class="quantity-input">
+          <input type="number" min="0" value="${item.quantity}" data-index="${index}" class="quantity-input">
           <p>Color: ${item.color}</p>
           <p>Size: ${item.size}</p>
           <p class="cart-price">${item.price} NOK</p>
@@ -205,12 +205,19 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       cartContainer.appendChild(cartItem);
     });
+
     document.querySelectorAll(".quantity-input").forEach((input) => {
       input.addEventListener("change", (e) => {
         const idx = e.target.dataset.index;
         const newQty = parseInt(e.target.value);
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cart[idx].quantity = newQty;
+
+         if (newQty <= 0) {
+         cart.splice(idx, 1);
+      } else {
+       cart[idx].quantity = newQty;
+      }
+
         localStorage.setItem("cart", JSON.stringify(cart));
         displayCart();
         updateOrderSummary();
@@ -290,11 +297,15 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Please fill in all payment details before paying.");
         return;
       }
+
       const cart = JSON.parse(localStorage.getItem("cart")) || [];
       let total = 0;
+
       cart.forEach((item) => {
         total += Number(item.price) * Number(item.quantity);
+
       });
+
       localStorage.setItem("lastOrderTotal", total);
       localStorage.removeItem("cart");
       window.location.href = "payment.html";
